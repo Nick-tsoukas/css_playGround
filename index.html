@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Test Cube</title>
-    <link rel="stylesheet" href="/main.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Test Cube</title>
+  <link rel="stylesheet" href="/main.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
+</head>
 
+<body>
 
+  <section class="main">
 
-    <section class="main">
+    <section class="cube">
+      <div id="cubeId" class="top_cube"></div>
+    </section>
 
-      <section class="cube">
-        <div id="cubeId" class="top_cube">
-
-        </div>
-      </section>
-
-      <section class="controls">
-        <div class="input-field col s12">
-          <h6 class="heading_label">Pick A CSS Property</h6>
-          <select id="mySelect" onchange="changeCss()">
+    <section class="controls">
+      <div class="input-field col s12">
+        <h6 class="heading_label">Pick A CSS Property</h6>
+        <select id="mySelect" onchange="changeCss()">
             <option value="" disabled selected>Choose your option</option>
             <option value="background-color:green">green</option>
             <option value="background-color:blue">blue</option>
@@ -34,27 +31,11 @@
             <option value="transform:matrix(2, 2, 1, 2, 3, 3)">matrix</option>
             <option value="animation-name:spin">spin</option>
             <option value="animation-name:spin"></option>
-
-
           </select>
       </div>
-
-        <!-- <select id="mySelect" onchange="changeCss()">
-          <option value="background-color:green">green</option>
-          <option value="background-color:blue">blue</option>
-          <option value="transform:scale(2)">scale</option>
-          <option value="transform:matrix(2, 2, 1, 2, 3, 3)">matrix</option>
-          <option value="animation-name:spin">spin</option>
-        </select> -->
-
-
-      </section>
-
     </section>
 
-
-
-
+  </section>
   <script src="/main.js" charset="utf-8"></script>
-  </body>
+</body>
 </html>
