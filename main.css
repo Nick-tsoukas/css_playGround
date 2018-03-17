@@ -1,0 +1,62 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: 1.5fr 1fr;
+  height: 100%;
+  align-items: flex-end;
+  padding-bottom: 5em;
+}
+
+.cube {
+  height: 100%;
+}
+
+.controls {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+
+.controls > select {
+  flex-grow: 0;
+}
+
+.cube {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease-in;
+}
+
+.top_cube {
+  height: 15em;
+  width:  15em;
+  background-color: black;
+  transition: all 1s ease-in;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.heading_label {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-bottom: 1em;
+}
+
+.select-wrapper {
+  width: 350px;
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
